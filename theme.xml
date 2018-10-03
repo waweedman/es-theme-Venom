@@ -1,0 +1,324 @@
+<!--
+theme name:		ULTIMATE PII
+version:		1.0
+author:		 Will Allen (aka) WAWEEDMAN
+
+-->
+
+<theme>
+    <formatVersion>4</formatVersion>
+
+	<view name="system">
+	
+		<image name="background" extra="true">
+			<tile>false</tile>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<size>1 1</size>
+                        <zIndex>38</zIndex>
+			<path>./assets/bg.png</path>
+		</image>
+		<image name="header" extra="true">
+			<path>./assets/venom.png</path>
+                        <origin>0 0</origin>
+                        <pos>0.370 0.000</pos>
+                        <zIndex>40</zIndex>
+                        <maxSize>0.720 0.886</maxSize>
+                </image>
+
+		<helpsystem name="help">
+			<textColor>ffffff</textColor>
+			<iconColor>ffffff</iconColor>
+			<pos>1 1</pos>
+		</helpsystem>	
+		
+		<image name="logo">
+			<path>./art/${system.theme}.png</path>
+		</image>
+		
+	    <text name="systemInfo">
+         <pos>0.002 0.897</pos>
+         <backgroundColor>000000</backgroundColor>
+         <color>ffffff</color>
+         <fontPath>./_inc/fonts/venombold.ttf</fontPath>
+	     <fontSize>0.02</fontSize>
+      </text>
+
+		
+	</view>
+
+	<view name="basic, detailed, video">
+		
+		<text name="md_lbl_releasedate, md_lbl_developer, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount">
+			<color>ffffff</color>
+			<forceUppercase>0</forceUppercase>
+			<fontPath>./assets/venombold.ttf</fontPath>
+			<fontSize>0.028</fontSize>
+		</text>
+
+		<text name="md_developer, md_genre, md_players, md_playcount, md_releasedate">
+			<color>ffffff</color>
+			<forceUppercase>0</forceUppercase>
+			<fontPath>./assets/venombold.ttf</fontPath>
+			<fontSize>0.028</fontSize>
+		</text>
+
+		<helpsystem name="help">
+			<textColor>ffffffff</textColor>
+			<iconColor>ffffffff</iconColor>
+			<pos>1 1</pos>
+		</helpsystem>
+		
+		<image name="logo">
+			<color>00000000</color>
+			<path>./assets/box.png</path>
+			<pos>1 1</pos>
+		</image>
+		
+		<image name="background" extra="true">
+			<tile>false</tile>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<size>1 1</size>
+			<path>./assets/systembg.jpg</path>
+		</image>
+		
+		<text name="system_name_1" extra="true">
+			<text>${system.fullName}</text>
+			<forceUppercase>0</forceUppercase>
+			<size>0.343 0.000</size>
+			<pos>0.660 0.000</pos>
+			<color>ffffff</color>
+                        <zIndex>40</zIndex>
+			<fontPath>./assets/venombold.ttf</fontPath>
+			<fontSize>0.05</fontSize>
+			<alignment>left</alignment>
+		</text>
+		
+	</view>
+
+	<view name="basic">
+
+		<image name="background">
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<size>1 1</size>
+			<path>./assets/systembgbasic.png</path>
+		</image>
+		
+		<textlist name="gamelist">
+			<selectedColor>3750eb</selectedColor>
+			<primaryColor>ffffff</primaryColor>
+			<secondaryColor>888889</secondaryColor>
+			<selectorColor>000000</selectorColor>
+			<fontPath>./assets/venombold.ttf</fontPath>
+			<zIndex>40</zIndex>
+                        <fontSize>0.028</fontSize>
+			<pos>0.021 0.175</pos>
+			<size>0.208 0.532</size>
+			<alignment>left</alignment>
+			<horizontalMargin>0.01</horizontalMargin>
+			<lineSpacing>2.3</lineSpacing>
+			<scrollSound>./assets/Move.wav</scrollSound>
+		</textlist>	
+
+	</view>
+	
+
+	<view name="detailed">
+		
+	  <image name="md_marquee">
+			<origin>0 0</origin>
+			<pos>0.021 0.016</pos>
+			<maxSize>0.298 0.108</maxSize>
+                        <zIndex>40</zIndex>
+	  </image>
+		<image name="md_image">
+		        <pos>0.390 0.587</pos>
+                        <zIndex>39</zIndex>
+			<maxSize>0.277 0.365</maxSize>
+			<origin>0 0</origin>
+		</image>
+	
+	</view>
+	
+	<view name="detailed, video">	
+		
+		
+		<image name="background" extra="true">
+			<tile>false</tile>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<size>1 1</size>
+                        <zIndex>38</zIndex>
+			<path>./assets/systembg.png</path>
+		</image>
+<image name="image" extra="true">
+			<path>./assets/venom2.png</path>
+                        <origin>0.5 0.5</origin>
+                        <pos>0.500 0.450</pos>
+                        <zIndex>40</zIndex>
+                        <maxSize>0.420 0.566</maxSize>
+                </image>
+<!-------------PLAYERS------------------->		
+		<text name="md_lbl_players">
+			<pos>0.700 0.600</pos>
+                        <fontSize>0.04</fontSize>
+                </text>
+		
+		<text name="md_players">
+			<pos>0.700 0.645</pos>
+		        <fontSize>0.04</fontSize>
+                </text>
+<!-------------GENRE--------------------->		
+		<text name="md_lbl_genre">
+			<pos>0.700 0.330</pos>
+		        <fontSize>0.04</fontSize>
+                </text>
+		
+		<text name="md_genre">
+			<pos>0.700 0.375</pos>
+		        <fontSize>0.04</fontSize>
+                </text>
+<!-------------DEVELOPER----------------->		
+		<text name="md_lbl_developer">
+			<pos>0.700 0.415</pos>
+		        <fontSize>0.04</fontSize>
+                </text>
+		
+		<text name="md_developer">
+			<pos>0.700 0.465</pos>
+		        <fontSize>0.04</fontSize>
+                </text>
+<!-------------RELEASE------------------->		
+		<datetime name="md_releasedate">
+			<color>ffffff</color>
+			<pos>0.700 0.560</pos>
+                        <fontSize>0.04</fontSize>
+		</datetime>
+		
+		<text name="md_lbl_releasedate">
+			<color>ffffff</color>
+			<pos>0.700 0.510</pos>
+	                <fontSize>0.04</fontSize>	
+                </text>
+<!-------------DESCRIPTION--------------->		
+		<text name="md_description">
+			<color>ffffff</color>
+			<forceUppercase>1</forceUppercase>
+			<fontPath>./assets/venombold.ttf</fontPath>
+			<fontSize>0.025</fontSize>
+			<pos>0.341 0.016</pos>
+			<size>0.298 0.108</size>		
+                </text>
+<!-------------GAMELIST------------------>		
+		<textlist name="gamelist">
+			<selectedColor>3750eb</selectedColor>
+			<primaryColor>ffffff</primaryColor>
+			<secondaryColor>888889</secondaryColor>
+			<selectorColor>000000</selectorColor>
+			<fontPath>./assets/venombold.ttf</fontPath>
+			<zIndex>40</zIndex>
+                        <fontSize>0.028</fontSize>
+			<pos>0.021 0.175</pos>
+			<size>0.208 0.532</size>
+			<alignment>left</alignment>
+			<horizontalMargin>0.01</horizontalMargin>
+			<lineSpacing>2.3</lineSpacing>
+			<scrollSound>./assets/Move.wav</scrollSound>
+		</textlist>
+<!-------------LAST PLAYED--------------->		
+		<text name="md_lbl_lastplayed">
+		    <color>000000</color>
+			<pos>0.269 0.145</pos>
+                        <zIndex>30</zIndex>
+		</text>
+		
+		<datetime name="md_lastplayed">
+		    <color>000000</color>
+			<pos>0.390 0.138</pos>
+                        <zIndex>30</zIndex>
+		</datetime>	
+<!-------------PLAYCOUNT----------------->
+		<text name="md_lbl_playcount">
+		    <color>ffffff</color>
+			<pos>0.065 0.670</pos>
+		</text>
+		
+		<text name="md_playcount">
+		    <color>ffffff</color>
+			<pos>0.170 0.667</pos>
+		</text>
+<!-------------PUBLISHER----------------->		
+		<text name="md_lbl_publisher">
+			<pos>1 1</pos>
+		</text>
+		
+		<text name="md_publsher">
+			<pos>1 1</pos>
+		</text>
+<!-------------RATINGS------------------->
+		<text name="md_lbl_rating">
+			<pos>1 1</pos>
+		</text>
+		
+		<rating name="md_rating">
+			<pos>0.679 0.200</pos>
+			<size>0.278 0.094</size>
+			<filledPath>./assets/1.png</filledPath>
+			<unfilledPath>./assets/0.png</unfilledPath>
+		</rating>
+</view>
+	
+<feature supported="carousel">
+   <view name="system">
+      <carousel name="systemcarousel">
+        <type>horizontal</type>
+        <pos>0.025 0.620</pos>
+        <size>0.95 0.4</size>
+        <zIndex>39</zIndex>
+        <logoScale>1.5</logoScale>
+        <logoSize>0.1 0.15</logoSize>
+        <color>00000000</color>
+        <maxLogoCount>7</maxLogoCount>
+      </carousel>
+
+
+    <text name="systemInfo">
+      <backgroundColor>00000000</backgroundColor>
+	  <color>ffffff</color>
+	  <pos>0.310 0.880</pos>
+	  <size>0.388 0.182</size>
+      <fontPath>./assets/venombold.ttf</fontPath>
+	  <alignment>center</alignment>
+	  <lineSpacing>2.3</lineSpacing>
+      <fontSize>0.050</fontSize>
+    </text>
+
+  </view>
+
+ </feature>
+  
+ <view name="video">
+		
+	  <image name="md_marquee">
+			<origin>0 0</origin>
+			<pos>0.021 0.016</pos>
+			<maxSize>0.298 0.108</maxSize>
+                        <zIndex>40</zIndex>
+	  </image>
+	  	
+	  
+	  <video name="md_video">
+		        <pos>0.312 0.587</pos>
+                        <zIndex>40</zIndex>
+			<maxSize>0.277 0.365</maxSize>
+			<origin>0 0</origin>
+			<delay>0.0</delay>
+			<showSnapshotNoVideo>false</showSnapshotNoVideo>
+			<showSnapshotDelay>false</showSnapshotDelay>
+		</video>
+	</view> 
+	
+	
+</theme>
